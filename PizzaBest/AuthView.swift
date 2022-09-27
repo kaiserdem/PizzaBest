@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  AuthView.swift
 //  PizzaBest
 //
 //  Created by kaiserdem  on 20.09.2022.
@@ -7,12 +7,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct AuthView: View {
     
     @State private var email = ""
     @State private var password = ""
     @State private var isAuth = true
     @State private var confirmPassword = ""
+    
+    @State private var isTabViewShow = false
     
     var body: some View {
         VStack(spacing: 20) {
@@ -48,7 +50,17 @@ struct ContentView: View {
                 }
                 
                 Button {
-                    print("auth")
+                    if isAuth {
+                        print("auth user from backend")
+                        isTabViewShow.toggle()
+                    } else {
+                        print("Registration")
+                        self.email = ""
+                        self.password = ""
+                        self.confirmPassword = ""
+                        self.isAuth.toggle()
+                    }
+                    
                 } label: {
                     Text(isAuth ? "Enter" : "Create account")
                         .padding()
@@ -87,12 +99,15 @@ struct ContentView: View {
                 .ignoresSafeArea()
                 .blur(radius: isAuth ? 0 : 4))
             .animation(Animation.easeInOut(duration: 0.1), value: isAuth)
+            .fullScreenCover(isPresented: $isTabViewShow) {
+                MainTabBar()
+            }
         
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        AuthView()
     }
 }

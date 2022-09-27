@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		754CB71328D9F7C0000CE9B5 /* PizzaBestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754CB71228D9F7C0000CE9B5 /* PizzaBestApp.swift */; };
-		754CB71528D9F7C0000CE9B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754CB71428D9F7C0000CE9B5 /* ContentView.swift */; };
+		754CB71528D9F7C0000CE9B5 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754CB71428D9F7C0000CE9B5 /* AuthView.swift */; };
 		754CB71728D9F7C3000CE9B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 754CB71628D9F7C3000CE9B5 /* Assets.xcassets */; };
 		754CB71A28D9F7C3000CE9B5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 754CB71928D9F7C3000CE9B5 /* Preview Assets.xcassets */; };
+		75ADA1D028E2E3B900DDAED6 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ADA1CF28E2E3B900DDAED6 /* MainTabBar.swift */; };
+		75ADA1D228E2E8BA00DDAED6 /* CatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ADA1D128E2E8BA00DDAED6 /* CatalogView.swift */; };
+		75ADA1D428E2E8FB00DDAED6 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ADA1D328E2E8FB00DDAED6 /* CartView.swift */; };
+		75ADA1D628E2E92500DDAED6 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ADA1D528E2E92500DDAED6 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		754CB70F28D9F7C0000CE9B5 /* PizzaBest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PizzaBest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		754CB71228D9F7C0000CE9B5 /* PizzaBestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaBestApp.swift; sourceTree = "<group>"; };
-		754CB71428D9F7C0000CE9B5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		754CB71428D9F7C0000CE9B5 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		754CB71628D9F7C3000CE9B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		754CB71928D9F7C3000CE9B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		75ADA1CF28E2E3B900DDAED6 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
+		75ADA1D128E2E8BA00DDAED6 /* CatalogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogView.swift; sourceTree = "<group>"; };
+		75ADA1D328E2E8FB00DDAED6 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		75ADA1D528E2E92500DDAED6 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,11 @@
 			isa = PBXGroup;
 			children = (
 				754CB71228D9F7C0000CE9B5 /* PizzaBestApp.swift */,
-				754CB71428D9F7C0000CE9B5 /* ContentView.swift */,
+				754CB71428D9F7C0000CE9B5 /* AuthView.swift */,
+				75ADA1CF28E2E3B900DDAED6 /* MainTabBar.swift */,
+				75ADA1D128E2E8BA00DDAED6 /* CatalogView.swift */,
+				75ADA1D328E2E8FB00DDAED6 /* CartView.swift */,
+				75ADA1D528E2E92500DDAED6 /* ProfileView.swift */,
 				754CB71628D9F7C3000CE9B5 /* Assets.xcassets */,
 				754CB71828D9F7C3000CE9B5 /* Preview Content */,
 			);
@@ -137,8 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				754CB71528D9F7C0000CE9B5 /* ContentView.swift in Sources */,
+				75ADA1D428E2E8FB00DDAED6 /* CartView.swift in Sources */,
+				75ADA1D028E2E3B900DDAED6 /* MainTabBar.swift in Sources */,
+				754CB71528D9F7C0000CE9B5 /* AuthView.swift in Sources */,
 				754CB71328D9F7C0000CE9B5 /* PizzaBestApp.swift in Sources */,
+				75ADA1D628E2E92500DDAED6 /* ProfileView.swift in Sources */,
+				75ADA1D228E2E8BA00DDAED6 /* CatalogView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
