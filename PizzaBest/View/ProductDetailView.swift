@@ -14,6 +14,8 @@ struct ProductDetailView: View {
     @State var size = "Small"
     // @State var size = Sizes.small
     @State var count = 1
+    
+    @Environment(\.presentationMode) var presentationMode
 
     
     var body: some View {
@@ -48,10 +50,14 @@ struct ProductDetailView: View {
                     }
                 }.pickerStyle(.segmented)
                     .padding()
-                
             }
+            
             Button {
-                print("To Cart")
+                var position = Position(id: UUID().uuidString, product: viewModel.product, count: self.count)
+                position.product.price = viewModel.getPrice(size: size)
+                CartViewModel.shared.addPosition(position)
+
+                presentationMode.wrappedValue.dismiss()
             } label: {
                 Text("Add To Cart!")
                     .padding()

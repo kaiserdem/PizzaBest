@@ -22,6 +22,7 @@
 		75ED627F28E8DDF7007AA2C1 /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED627E28E8DDF7007AA2C1 /* ProductDetailViewModel.swift */; };
 		75ED628128E98818007AA2C1 /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED628028E98818007AA2C1 /* CartViewModel.swift */; };
 		75ED628328E98849007AA2C1 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED628228E98849007AA2C1 /* Position.swift */; };
+		75ED628528E98DDF007AA2C1 /* PositionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED628428E98DDF007AA2C1 /* PositionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		75ED627E28E8DDF7007AA2C1 /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
 		75ED628028E98818007AA2C1 /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
 		75ED628228E98849007AA2C1 /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		75ED628428E98DDF007AA2C1 /* PositionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				75ADA1DA28E2F1E000DDAED6 /* ProductCell.swift */,
+				75ED628428E98DDF007AA2C1 /* PositionCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 				75ADA1DB28E2F1E000DDAED6 /* ProductCell.swift in Sources */,
 				75ADA1D028E2E3B900DDAED6 /* MainTabBar.swift in Sources */,
 				754CB71528D9F7C0000CE9B5 /* AuthView.swift in Sources */,
+				75ED628528E98DDF007AA2C1 /* PositionCell.swift in Sources */,
 				75ED627F28E8DDF7007AA2C1 /* ProductDetailViewModel.swift in Sources */,
 				75ED628328E98849007AA2C1 /* Position.swift in Sources */,
 				754CB71328D9F7C0000CE9B5 /* PizzaBestApp.swift in Sources */,
