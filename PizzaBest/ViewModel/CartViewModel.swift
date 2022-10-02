@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+class CartViewModel: ObservableObject {
+    
+    @Published var position = [Position]()
+    
+    func addPosition(_ position: Position) {
+        self.position.append(position)
+    }
+    
+}

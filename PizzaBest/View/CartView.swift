@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct CartView: View {
+    
+    var viewModel: CartViewModel
+    
     var body: some View {
-        Text("CartView")
+        Text("Cart!")
     }
 }
 
 struct CartView_Previews: PreviewProvider {
     static var previews: some View {
-        CartView()
+        CartView(viewModel: CartViewModel())
     }
 }

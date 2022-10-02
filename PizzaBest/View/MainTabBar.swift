@@ -11,7 +11,11 @@ struct MainTabBar: View {
     var body: some View {
         
         TabView {
-            CatalogView()
+            
+            NavigationView {
+                CatalogView()
+
+            }
                 .tabItem {
                     VStack {
                         Image(systemName: "menucard")
@@ -19,11 +23,11 @@ struct MainTabBar: View {
                     }
                 }
             
-            CartView()
+            CartView(viewModel: CartViewModel())
                 .tabItem {
                     VStack {
                         Image(systemName: "cart")
-                        Text("Trash")
+                        Text("Cart")
                     }
                 }
             
