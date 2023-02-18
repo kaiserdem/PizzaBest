@@ -7,11 +7,15 @@
 
 import SwiftUI
 import Firebase
+import FirebaseAuth
 
 let screen = UIScreen.main.bounds
 
 @main
 struct PizzaBestApp: App {
+    
+    @UIApplicationDelegateAdaptor private var appDeledate: AppDelegate
+    
     var body: some Scene {
         WindowGroup {
             AuthView()
@@ -22,6 +26,7 @@ struct PizzaBestApp: App {
         
         func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
             FirebaseApp.configure()
+            print("didFinishLaunchingWithOptions")
             return true
         }
     }
